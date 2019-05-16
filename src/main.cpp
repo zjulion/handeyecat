@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	// transform camera to world, to estimate
 	GeoTransform H_c_in_w = getTransM(Geo3d(0.8, 0.12, 2.4), Geo3d(M_PI*1.02, -0.12*M_PI, M_PI *0.51)); 
 
-	cout << "camera in wordl:\n" << H_c_in_w.matrix() << endl;
+	cout << "camera in world:\n" << H_c_in_w.matrix() << endl;
 
 	// grid in end, unkonwn, but we don't not have to solve it
 	GeoTransform H_g_in_e = getTransM(Geo3d(0.10, 0.20, -0.401), Geo3d(0.20, -0.20, 0.20));

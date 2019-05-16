@@ -87,11 +87,11 @@ GeoTransform calibrateHandEye(std::vector<GeoTransform>& vH_robot, std::vector<G
 	const int n = lxmin(vH_robot.size(), vH_robot.size());
 	if(n <3)
 	{
-		printf("At lease 3 point-pairs.");
+		printf("At lease 3 point-pairs.\n");
 		return GeoTransform();
 	}
 
-	printf("Start to calibrate with %d point-pairs.", n);
+	printf("Start to calibrate with %d point-pairs.\n", n);
   
 	std::vector<GeoTransform> vA, vB;
 
@@ -159,7 +159,7 @@ GeoTransform sovleAXequalXB(std::vector<GeoTransform>& vA, std::vector<GeoTransf
 	H.setIdentity();
 	if (vA.size() != vB.size())
 	{
-		printf("A and B must be same size.");
+		printf("A and B must be same size.\n");
 		return H;
 	}
 
