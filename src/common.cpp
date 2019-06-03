@@ -84,7 +84,7 @@ Geo3d rodrigues2(const RotMat& matrix)
 GeoTransform calibrateHandEye(std::vector<GeoTransform>& vH_robot, std::vector<GeoTransform>& vH_mark, HandEyeType t)
 {
 	//Eigen::Matrix4f rt;
-	const int n = lxmin(vH_robot.size(), vH_robot.size());
+	const int n = lxmin(vH_robot.size(), vH_mark.size());
 	if(n <3)
 	{
 		printf("At lease 3 point-pairs.\n");
