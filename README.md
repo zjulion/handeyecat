@@ -2,7 +2,7 @@
 * 基于[Eigen](http://eigen.tuxfamily.org)库的手眼标定算法
 
 ## Description 算法描述
-- 输入离散采集的机器人和相机位姿，计算出二者转移矩阵
+- 输入离散采集的机器人和相机位姿，计算出二者转移矩阵。Solving $AX=XB$.
 - 实现算法： The "classic" Tsai way, [reference](http://campar.in.tum.de/view/Chair/HandEyeCalibration)：
 	- *Tsai, R.Y., Lenz, R.K.*
         
