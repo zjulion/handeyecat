@@ -1,5 +1,6 @@
 # HandEyeCat: Easy Hand-eye calibration tools.
 * 基于[Eigen](http://eigen.tuxfamily.org)库的手眼标定算法
+## `新增博客文章` 具体概念阐述可点击如下链接【中文】(In Chinese) [https://www.cnblogs.com/zjulion/p/10969576.html](https://www.cnblogs.com/zjulion/p/10969576.html)
 
 ## Description 算法描述
 - 输入离散采集的机器人和相机位姿，计算出二者转移矩阵。Solving $AX=XB$.
